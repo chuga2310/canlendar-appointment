@@ -1,46 +1,59 @@
-# Getting Started with Create React App
+# Medical Appointment Calendar
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a **Medical Appointment Calendar** application built with React and FullCalendar. It allows users to manage events such as appointments, with features like adding, editing, and removing events.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Interactive Calendar**: View events in different layouts (month, week, day, and list).
+- **Event Management**: Add, edit, and delete events.
+- **Drag and Drop**: Move events interactively.
+- **Persistent Storage**: Events are saved in `localStorage` for persistence.
+- **Customizable Time Slots**: Configure time slots and working hours.
+- **Popover for Event Editing**: Edit event details using a popover interface.
 
-### `npm start`
+## Project Structure
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```plaintext
+calendar-app/
+├── public/             # Static assets
+├── src/                # Source code
+│   ├── components/     # React components
+│   │   ├── CalendarComponent/  # Calendar UI
+│   │   └── EventPopover/       # Event editing popover
+│   ├── contexts/       # Context for managing events
+│   ├── types.ts        # TypeScript types
+│   ├── constants.ts    # Constants (e.g., background events)
+│   ├── App.tsx         # Main application component
+│   ├── index.tsx       # Entry point
+│   └── ...             # Other files
+├── package.json        # Project dependencies and scripts
+└── README.md           # Project documentation
+```
+### Prerequisites
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Node.js (>= 14.x)
+- npm (>= 6.x)
 
-### `npm test`
+### Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd calendar-app
 
-### `npm run build`
+2. Install dependencies: ```npm install```
+3. Start dependencies: ```npm start```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Key Files:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- ```src/components/CalendarComponent```: Implements the calendar UI using FullCalendar.
+- ```src/components/EventPopover```: Handles event editing via a popover.
+- ```src/contexts/EventProviders.tsx```: Manages event state using React Context and save event to ```localStorage```.
+- ```src/types.ts```: Defines TypeScript types for events.
+- ```src/constants.ts```: ```backgroundEvents``` for background events (Ex: lunch time, ...)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Technologies Used
+- React: Frontend library for building the UI.
+- FullCalendar: Calendar library for event management.
+- TypeScript: Strongly typed JavaScript.
+- CSS: Styling for components.
