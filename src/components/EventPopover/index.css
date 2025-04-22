@@ -1,0 +1,43 @@
+/* src/components/EventPopover/EventPopover.css */
+
+.popover {
+  position: absolute;
+  background: #fff;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  z-index: 9999;
+  width: 220px;
+}
+
+.popover-input {
+  width: -webkit-fill-available;
+  padding: 8px;
+  font-size: 14px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.popover-actions {
+  text-align: right;
+}
+
+.popover-save {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 6px;
+}
+
+.popover-cancel {
+  background: #e5e7eb;
+  color: #333;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}

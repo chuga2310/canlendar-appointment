@@ -1,0 +1,61 @@
+/* src/CalendarStyles.css */
+
+/* General container */
+.calendar-wrapper {
+  max-width: 1080px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+}
+
+/* Font & general style tweaks */
+.fc {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 14px;
+}
+
+/* Reduce height per slot */
+.fc-timegrid-slot {
+  height: 2.2em;
+}
+
+/* Bold current time indicator */
+.fc-timegrid-now-indicator {
+  background-color: red;
+}
+
+/* Event styles */
+.fc-event {
+  background-color: #3b82f6;
+  border: none;
+  border-radius: 6px;
+  padding: 2px 6px;
+  color: white;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+/* Customize header toolbar */
+.fc-toolbar-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.fc-button {
+  background-color: #2563eb;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+}
+
+.fc-button-primary:not(:disabled).fc-button-active,
+.fc-button-primary:not(:disabled):active {
+  background-color: #1d4ed8;
+}
+
+.fc-button-primary:disabled {
+  background-color: #a5b4fc;
+  cursor: not-allowed;
+}
